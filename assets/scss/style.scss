@@ -1,5 +1,29 @@
 * {
     margin: 0;
     padding: 0;
-    background-color: azure;
+}
+
+body {
+    // height: 100vh;
+    // width: 100vw;
+    // background-color: blue;
+    // overflow: hidden;
+    // color: white;
+}
+
+.topContainer{
+    height: 10vh;
+    width: 100vw;
+    background-color: red;
+}
+
+
+
+.container{
+    height: 90vh;
+    width: 100vw;
+}
+
+.test{
+    
 }

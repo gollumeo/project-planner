@@ -1,5 +1,15 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: azure;
+}
+
+.topContainer {
+  height: 10vh;
+  width: 100vw;
+  background-color: red;
+}
+
+.container {
+  height: 90vh;
+  width: 100vw;
 }/*# sourceMappingURL=style.css.map */
