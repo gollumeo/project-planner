@@ -1,22 +1,22 @@
 * {
   margin: 0;
   padding: 0;
+  color: rgb(98, 98, 98);
 }
 
 body {
   font-family: "Montserrat Alternates", sans-serif;
-  background-color: rgb(212, 247, 255);
+  background-color: #98c8f5;
   overflow: hidden;
 }
 
 .topContainer {
   height: 10vh;
   width: 100vw;
-  background-color: #25a8ff;
+  background-color: #c9e2f9;
 }
 
 .texttop {
-  color: #091e42;
   font-size: 300%;
   text-align: left;
 }
@@ -32,7 +32,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 33vw;
-  border: 1px black solid;
   margin: 0 auto;
   justify-content: center;
   gap: 2vw;
@@ -44,21 +43,99 @@ body {
   border-radius: 5%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
 }
-.display-cards .to-do-header,
-.display-cards .doing-header,
+.display-cards .to-do {
+  background-color: #728393;
+  color: white;
+}
+.display-cards .doing {
+  background-color: #8faecc;
+  color: white;
+}
+.display-cards .done {
+  background-color: #abd1f5;
+  color: white;
+}
+.display-cards .to-do-header {
+  background-color: #728393;
+  width: 28vw;
+  height: 5vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+.display-cards .doing-header {
+  background-color: #8faecc;
+  width: 28vw;
+  height: 5vh;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
 .display-cards .done-header {
   width: 28vw;
   height: 5vh;
-  background-color: aqua;
+  background-color: #abd1f5;
   border-radius: 20px;
+  box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
+  margin-top: 5%;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.taskTitle {
+  text-align: center;
+  color: white;
+  font-size: 150%;
+}
+
+.taskNumber {
+  color: white;
+  font-size: 130%;
+}
+
+.taskDescription {
+  color: white;
+  font-size: 130%;
+}
+
+.taskAssignment {
+  color: white;
+  font-size: 130%;
+}
+
+.deadline {
+  color: white;
+  font-size: 130%;
 }
 
 .taskText {
   font-size: 150%;
   margin: 10px;
+  color: white;
 }
 
 .description {
   font-size: 150%;
+}
+
+.footerContainer {
+  border: 4px black solid;
+  height: 20vh;
+  width: 100vw;
+}
+
+.textfooter {
+  font-size: smaller;
 }/*# sourceMappingURL=style.css.map */
