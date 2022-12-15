@@ -8,13 +8,16 @@
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
   background-color: #3350a6;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   display: flex;
   align-items: center;
   margin-bottom: 5%;
@@ -26,10 +29,19 @@ header .brand {
 
 main {
   width: 100vw;
-  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+main .task {
+  height: 100%;
+  border-radius: 20px;
+  background-color: #0554f2;
+}
+
+main .task div {
+  margin-left: 5%;
 }
 
 main .to-do-container {
@@ -47,12 +59,6 @@ main .to-do-container .to-do-title {
   background-color: #0554f2;
 }
 
-main .to-do-container .task {
-  height: 100%;
-  color: black;
-  background-color: red;
-}
-
 main .doing-container {
   flex: 33%;
   width: 80vw;
@@ -66,10 +72,6 @@ main .doing-container .doing-title {
   border-radius: 20px;
   margin: 2% 0 2%;
   background-color: #1374f2;
-}
-
-main .doing-container .doing-tasks {
-  height: 100%;
 }
 
 main .done-container {
@@ -87,13 +89,9 @@ main .done-container .done-title {
   background-color: #0dd965;
 }
 
-main .done-container .done-tasks {
-  height: 100%;
-}
-
 footer {
   background-color: #3350a6;
   width: 100vw;
-  height: 15%;
+  height: 15vh;
 }
 /*# sourceMappingURL=style.css.map */

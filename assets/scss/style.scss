@@ -31,7 +31,10 @@ $Outstaffing-Platform-5-hex: #0dd965;
 
 body {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 //STRUCTURE
@@ -39,7 +42,7 @@ body {
 header {
   background-color: $Outstaffing-Platform-1-hex;
   width: 100vw;
-  height: 10%;
+  height: 10vh;
   display: flex;
   align-items: center;
   margin-bottom: 5%;
@@ -51,10 +54,19 @@ header {
 
 main {
   width: 100vw;
-  height: 75%;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .task {
+      height: 100%;
+      border-radius: 20px;
+      background-color: $Outstaffing-Platform-2-hex;
+
+      div {
+        margin-left: 5%;
+      }
+    }
 
   .to-do-container {
     @include tasks-container();
@@ -66,20 +78,13 @@ main {
       @include tasks-title();
       background-color: $Outstaffing-Platform-2-hex;
     }
-    .task {
-      height: 100%;
-      color: black;
-      background-color: red;
-    }
+
   }
   .doing-container {
     @include tasks-container();
     .doing-title {
       @include tasks-title();
       background-color: $Outstaffing-Platform-3-hex;
-    }
-    .doing-tasks {
-      height: 100%;
     }
   }
   .done-container {
@@ -88,14 +93,11 @@ main {
       @include tasks-title();
       background-color: $Outstaffing-Platform-5-hex;
     }
-    .done-tasks {
-      height: 100%;
-    }
   }
 }
 
 footer {
   background-color: $Outstaffing-Platform-1-hex;
   width: 100vw;
-  height: 15%;
+  height: 15vh;
 }
