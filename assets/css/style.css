@@ -130,12 +130,9 @@ body {
   font-size: 150%;
 }
 
-.footerContainer {
+.textfooter {
+  font-size: smaller;
   border: 4px black solid;
   height: 20vh;
   width: 100vw;
-}
-
-.textfooter {
-  font-size: smaller;
 }/*# sourceMappingURL=style.css.map */
