@@ -16,63 +16,46 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./assets/scripts/script.js"></script>
+    <script src="./assets/scripts/script.js" defer></script>
     <title>LET'S PLAN IT!</title>
   </head>
   <body>
     <header>
-      <div class="topContainer">
-        <p class="texttop">
-          <img src="assets/images/logo.png" alt="logo" />Let's plan it
-        </p>
-      </div>
+      <div class="logo"><img src="assets/images/logo.png" alt="logo" /></div>
+      <div class="brand">Let's plan it</div>
     </header>
     <main>
-      <div class="display-cards">
-        <div class="to-do-container">
-          <div class="to-do-header">to do</div>
-          <div class="card to-do">
-            <div class="taskNumber">#1</div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
+      <div class="to-do-container">
+        <div class="to-do-title">to-do</div>
+        <div class="to-do-tasks">
+          <div class="task to-do-cards">
+            <div class="title">Titre tâche</div>
+            <div class="description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consequuntur hic alias quasi provident inventore, corrupti cumque
+              commodi veniam, reiciendis debitis dignissimos enim harum rem.
+              Animi pariatur dolor labore? Hic, excepturi!
+            </div>
+            <div class="assignment">Benjamin</div>
+            <div class="deadline">11-.1-1997 - 05:30</div>
           </div>
         </div>
-        <div class="doing-container">
-          <div class="doing-header">doing</div>
-          <div class="card doing">
-            <div class="taskNumber">#1</div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
-          </div>
+      </div>
+      <div class="doing-container">
+        <div class="doing-title">doing</div>
+        <div class="doing-tasks">
+          <div class="task doing-cards"></div>
         </div>
-        <div class="done-container">
-          <div class="done-header">done</div>
-          <div class="card done">
-            <div class="taskNumber">#1</div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
-          </div>
+      </div>
+      <div class="done-container">
+        <div class="done-title">done</div>
+        <div class="done-tasks">
+          <div class="task done-cards"></div>
         </div>
       </div>
     </main>
     <footer>
-        <div class="footerContainer">
-            <p class="textfooter">
-                By KELLER 5
-            </p>
-        </div>
+      <p class="textfooter">By KELLER 5</p>
     </footer>
   </body>
 </html>

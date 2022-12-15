@@ -1,158 +1,101 @@
+/* Color Theme Swatches in Hex */
+$Outstaffing-Platform-1-hex: #3350a6;
+$Outstaffing-Platform-2-hex: #0554f2;
+$Outstaffing-Platform-3-hex: #1374f2;
+$Outstaffing-Platform-4-hex: #f2f2f2;
+$Outstaffing-Platform-5-hex: #0dd965;
+
+@mixin tasks-container {
+  // height: 33%;
+  flex: 33%;
+  width: 80vw;
+  margin: 2% 0;
+}
+@mixin tasks-title {
+  text-align: center;
+  font-size: 200%;
+  width: 100%;
+  border-radius: 20px;
+  margin: 2% 0 2%;
+}
+@mixin tasks {
+  margin: 2% 0 2%;
+}
+
 * {
   margin: 0;
   padding: 0;
-  color: rgb(98, 98, 98);
+  font-family: "Montserrat Alternates", sans-serif;
+  color: white;
 }
 
 body {
-  font-family: "Montserrat Alternates", sans-serif;
-  background-color: #98c8f5;
-  height: 100vh;
-//   overflow: hidden;
-}
-
-.topContainer {
-  height: 10vh;
   width: 100vw;
-  background-color: #c9e2f9;
+  height: 100vh;
 }
 
-.texttop {
-  font-size: 300%;
-  text-align: left;
+//STRUCTURE
 
-  img {
-    margin-top: 15px;
-    margin-left: 5px;
-  }
-}
-
-main{
-    height: fit-content;
-}
-
-.display-cards {
-  height: max-content;
-  width: fit-content;
+header {
+  background-color: $Outstaffing-Platform-1-hex;
+  width: 100vw;
+  height: 10%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex: 33vw;
-  margin: 0 auto;
-  justify-content: center;
-  gap: 2vw;
+  align-items: center;
+  margin-bottom: 5%;
 
-  .card {
-    margin-top: 10%;
-    height: 20%;
-    width: 28vw;
-    border-radius: 5%;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-  }
-
-  .to-do {
-    background-color: #728393;
-    color: white;
-  }
-
-  .doing {
-    background-color: #8faecc;
-    color: white;
-  }
-
-  .done {
-    background-color: #abd1f5;
-    color: white;
-  }
-
-  .to-do-header {
-    background-color: #728393;
-    width: 28vw;
-    height: 5vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
-    margin-top: 5%;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-  }
-  .doing-header {
-    background-color: #8faecc;
-    width: 28vw;
-    height: 5vh;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
-    margin-top: 5%;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
-  }
-  .done-header {
-    width: 28vw;
-    height: 5vh;
-    background-color: #abd1f5;
-    border-radius: 20px;
-    box-shadow: 0px 0px 10px 0px rgb(148, 148, 148);
-    margin-top: 5%;
-    text-align: center;
-    font-size: 2rem;
-    color: white;
+  .brand {
+    font-size: 140%;
   }
 }
 
-.taskTitle{
-  text-align: center;
-  color: white;
-  font-size: 150%;
+main {
+  width: 100vw;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .to-do-container {
+    @include tasks-container();
+
+    // display: flex;
+    // flex-direction: column;
+
+    .to-do-title {
+      @include tasks-title();
+      background-color: $Outstaffing-Platform-2-hex;
+    }
+    .task {
+      height: 100%;
+      color: black;
+      background-color: red;
+    }
+  }
+  .doing-container {
+    @include tasks-container();
+    .doing-title {
+      @include tasks-title();
+      background-color: $Outstaffing-Platform-3-hex;
+    }
+    .doing-tasks {
+      height: 100%;
+    }
+  }
+  .done-container {
+    @include tasks-container();
+    .done-title {
+      @include tasks-title();
+      background-color: $Outstaffing-Platform-5-hex;
+    }
+    .done-tasks {
+      height: 100%;
+    }
+  }
 }
 
-.taskNumber{
-  color: white;
-  font-size: 130%;
+footer {
+  background-color: $Outstaffing-Platform-1-hex;
+  width: 100vw;
+  height: 15%;
 }
-
-.taskDescription{
-  color: white;
-  font-size: 130%;
-}
-
-.taskAssignment{
-  color: white;
-  font-size: 130%;
-}
-
-.deadline{
-  color: white;
-  font-size: 130%;
-}
-
-.taskText {
-  font-size: 150%;
-  margin: 10px;
-  color: white;
-}
-
-.description {
-  font-size: 150%;
-}
-
-.footerContainer {
-
-border: 4px black solid;
-height: 200px;
-width: 200px;
-}
-
-footer{
-    position: absolute;
-    bottom: 0;
-}
-// .textfooter{
-// font-size: smaller;
-// }
-
