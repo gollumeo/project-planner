@@ -6,7 +6,6 @@
 body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: rgb(212, 247, 255);
-  overflow: hidden;
 }
 
 .topContainer {
@@ -32,7 +31,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   flex: 33vw;
-  border: 1px black solid;
   margin: 0 auto;
   justify-content: center;
   gap: 2vw;
@@ -61,4 +59,65 @@ body {
 
 .description {
   font-size: 150%;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(10px);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 1px black solid;
+  display: none;
+}
+article .cards-panel {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  justify-content: center;
+}
+article .cards-panel h1 {
+  text-align: center;
+  margin-bottom: 2.5vh;
+  margin-top: 10%;
+}
+article .cards-panel .text {
+  display: inline-block;
+  width: 20%;
+  height: auto;
+}
+article .cards-panel input {
+  height: 5vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 50%;
+  text-align: center;
+}
+article .cards-panel textarea {
+  font-family: "Montserrat Alternates", sans-serif;
+  height: 20vh;
+  width: 50%;
+}
+article .cards-panel div {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0 auto;
+}
+article .cards-panel .submit-btn {
+  margin-top: 1.5vh;
+}
+article .cards-panel .submit-btn button {
+  margin-left: 40%;
+  height: 3.5vh;
+  width: 10%;
+  background-color: rgb(187, 143, 143);
+  border-radius: 15px;
+  padding: 0.8vw;
+  line-height: 20%;
 }/*# sourceMappingURL=style.css.map */

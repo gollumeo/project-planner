@@ -1,73 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="./assets/images/planner-icon.png"
-      type="image/png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <script src="./assets/scripts/script.js"></script>
-    <title>LET'S PLAN IT!</title>
-  </head>
-  <body>
-    <header>
-      <div class="topContainer">
-        <p class="texttop">
-          <img src="assets/images/logo.png" alt="logo" />Let's plan it
-        </p>
-      </div>
-    </header>
-    <main>
-      <div class="display-cards">
-        <div class="to-do-container">
-          <div class="to-do-header">to do</div>
-          <div class="card to-do">
-            <div class="taskNumber"></div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="./assets/images/planner-icon.png" type="image/png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <script src="./assets/scripts/script.js"></script>
+  <title>LET'S PLAN IT!</title>
+</head>
+
+<body>
+  <header>
+    <div class="topContainer">
+      <p class="texttop">
+        <img src="assets/images/logo.png" alt="logo" />Let's plan it
+      </p>
+    </div>
+  </header>
+  <article>    
+    <div class="cards-panel">
+      <h1>Welcome to the tasks' creation tool! Please submit every field before submitting your work. 😊</h1>
+        <form>
+          <div class="panel-tasktitle">
+            <span class="text">Task name:</span> <input type="text" name="task-title" id="panel-title" placeholder="Your task name.">
           </div>
-        </div>
-        <div class="doing-container">
-          <div class="doing-header">doing</div>
-          <div class="card doing">
-            <div class="taskNumber"></div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
+          <div class="panel-description">
+            <span class="text">Description:</span> <textarea placeholder="A brief description of your task."></textarea>
           </div>
-        </div>
-        <div class="done-container">
-          <div class="doing-header">done</div>
-          <div class="card done">
-            <div class="taskNumber"></div>
-            <div class="taskTitle">Task 1</div>
-            <div class="taskDescription">Description</div>
-            <div class="taskAssignment">Assignement</div>
-            <div class="deadline">Deadline</div>
-            <div class="del"></div>
-            <div class="buttonChange"></div>
+          <div class="panel-assignment">
+            <span class="text">Assigned person:</span> <input type="text" name="assignment" id="panel-assignment"
+              placeholder="The person assigned to that task, if there is one.">
           </div>
+          <div class="panel-due-time">
+            <span class="text">Due time:</span> <input type="date" name="due-time" id="panel-due-time">
+          </div>
+          <div class="submit-btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+    </div>
+
+  </article>
+
+  <main>
+    <div class="display-cards">
+      <div class="to-do-container">
+        <div class="to-do-header">to do</div>
+        <div class="card to-do">
+          <div class="taskNumber"></div>
+          <div class="taskTitle">Task 1</div>
+          <div class="taskDescription">Description</div>
+          <div class="taskAssignment">Assignement</div>
+          <div class="deadline">Deadline</div>
+          <div class="del"></div>
+          <div class="buttonChange"></div>
         </div>
       </div>
-    </main>
-  </body>
+      <div class="doing-container">
+        <div class="doing-header">doing</div>
+        <div class="card doing">
+          <div class="taskNumber"></div>
+          <div class="taskTitle">Task 1</div>
+          <div class="taskDescription">Description</div>
+          <div class="taskAssignment">Assignement</div>
+          <div class="deadline">Deadline</div>
+          <div class="del"></div>
+          <div class="buttonChange"></div>
+        </div>
+      </div>
+      <div class="done-container">
+        <div class="doing-header">done</div>
+        <div class="card done">
+          <div class="taskNumber"></div>
+          <div class="taskTitle">Task 1</div>
+          <div class="taskDescription">Description</div>
+          <div class="taskAssignment">Assignement</div>
+          <div class="deadline">Deadline</div>
+          <div class="del"></div>
+          <div class="buttonChange"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>
