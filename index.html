@@ -13,7 +13,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
-  <script src="./assets/scripts/script.js"></script>
+
+  <script src="./assets/scripts/init.js" defer></script>
   <title>LET'S PLAN IT!</title>
 </head>
 
@@ -25,40 +26,46 @@
       </p>
     </div>
   </header>
-  <article>    
+  <article>
     <div class="cards-panel">
       <h1>Welcome to the tasks' creation tool! Please submit every field before submitting your work. 😊</h1>
-        <form>
-          <div class="panel-tasktitle">
-            <span class="text">Task name:</span> <input type="text" name="task-title" id="panel-title" placeholder="Your task name.">
-          </div>
-          <div class="panel-description">
-            <span class="text">Description:</span> <textarea placeholder="A brief description of your task."></textarea>
-          </div>
-          <div class="panel-assignment">
-            <span class="text">Assigned person:</span> <input type="text" name="assignment" id="panel-assignment"
-              placeholder="The person assigned to that task, if there is one.">
-          </div>
-          <div class="panel-due-time">
-            <span class="text">Due time:</span> <input type="date" name="due-time" id="panel-due-time">
-          </div>
-          <div class="submit-btn">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
+      <form>
+        <div class="panel-tasktitle">
+          <span class="text">Task name:</span> <input type="text" name="task-title" id="panel-title"
+            placeholder="Your task name.">
+        </div>
+        <div class="panel-description">
+          <span class="text">Description:</span> <textarea placeholder="A brief description of your task." id="panel-description"></textarea>
+        </div>
+        <div class="status">
+          <span class="text">Status:</span> <input type="radio" name="status" id="panel-task-status">
+        </div>
+        <div class="panel-assignment">
+          <span class="text">Assigned person:</span> <input type="text" name="assignment" id="panel-assignment"
+            placeholder="The person assigned to that task, if there is one.">
+        </div>
+        <div class="panel-due-time">
+          <span class="text">Due time:</span> <input type="date" name="due-time" id="panel-due-time">
+        </div>
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
     </div>
-
   </article>
 
   <main>
     <div class="display-cards">
+      <div id="add">
+        <button>New task</button>
+      </div>
       <div class="to-do-container">
         <div class="to-do-header">to do</div>
         <div class="card to-do">
           <div class="taskNumber"></div>
           <div class="taskTitle">Task 1</div>
           <div class="taskDescription">Description</div>
-          <div class="taskAssignment">Assignement</div>
+          <div class="taskAssignment">Assignment</div>
           <div class="deadline">Deadline</div>
           <div class="del"></div>
           <div class="buttonChange"></div>
