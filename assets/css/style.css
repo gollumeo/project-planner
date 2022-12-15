@@ -7,7 +7,7 @@
 body {
   font-family: "Montserrat Alternates", sans-serif;
   background-color: #98c8f5;
-  overflow: hidden;
+  height: 100vh;
 }
 
 .topContainer {
@@ -25,9 +25,13 @@ body {
   margin-left: 5px;
 }
 
+main {
+  height: fit-content;
+}
+
 .display-cards {
-  height: 90vh;
-  width: 90vw;
+  height: max-content;
+  width: fit-content;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -133,6 +137,11 @@ body {
 .textfooter {
   font-size: smaller;
   border: 4px black solid;
-  height: 20vh;
-  width: 100vw;
+  height: 200px;
+  width: 200px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
 }/*# sourceMappingURL=style.css.map */
