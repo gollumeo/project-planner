@@ -142,6 +142,22 @@ article .cards-panel .submit-btn button {
   margin-left: 50%;
   margin-bottom: 0.8vw;
 }
+article .cards-panel .submit-btn select {
+  height: 5vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0.5vh 0;
+}
+article .cards-panel .submit-btn select option {
+  height: 5vh;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 100%;
+  text-align: center;
+  border-radius: 25px;
+  margin: 0.5vh 0;
+}
 
 article.displayed {
   opacity: 100;
