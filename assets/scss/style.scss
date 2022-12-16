@@ -61,14 +61,31 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-
+////////////////////////////////////////////
+//////////////////CARD//////////////////////
+////////////////STYLE///////////////////////
+////////////////////////////////////////////
   .task {
       height: 100%;
       border-radius: 20px;
       background-color: $Outstaffing-Platform-2-hex;
-
-      div {
-        margin-left: 5%;
+      display: flex;
+      flex-direction: column;
+      .title{
+        text-align: center;
+      }
+      .description{
+        text-align: center;
+      }
+      .del{
+        text-align: end;
+        font-size: 200%;
+      }
+      .card-bottom{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
       }
     }
 
@@ -224,3 +241,14 @@ article.displayed {
     left: 0;
     margin: 1%;
   }
+  #exit{
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 0px;
+    font-size: 175%;
+    margin: 5px;
+    background-color: #ff7b00;
+    border-radius: 50%;
+  }
+

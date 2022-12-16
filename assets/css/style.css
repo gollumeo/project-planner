@@ -39,9 +39,24 @@ main .task {
   height: 100%;
   border-radius: 20px;
   background-color: #FF9800;
+  display: flex;
+  flex-direction: column;
 }
-main .task div {
-  margin-left: 5%;
+main .task .title {
+  text-align: center;
+}
+main .task .description {
+  text-align: center;
+}
+main .task .del {
+  text-align: end;
+  font-size: 200%;
+}
+main .task .card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 main .to-do-container {
   flex: 33%;
@@ -195,4 +210,15 @@ article.displayed {
   position: absolute;
   left: 0;
   margin: 1%;
+}
+
+#exit {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  right: 0px;
+  font-size: 175%;
+  margin: 5px;
+  background-color: #ff7b00;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

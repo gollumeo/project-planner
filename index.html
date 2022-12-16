@@ -29,6 +29,7 @@
       <div class="brand">Let's plan it</div>
     </header>
     <article>
+      <div id="exit"><ion-icon name="close-outline"></ion-icon></div>
       <div class="cards-panel">
         <h1>
           Welcome to the tasks' creation tool! Please submit every field before
@@ -74,7 +75,7 @@
           </div>
           <div class="panel-due-time">
             <span class="text">Due time:</span>
-            <input type="date" name="due-time" id="panel-due-time" required/>
+            <input type="date" name="due-time" id="panel-due-time" required />
           </div>
           <div class="submit-btn">
             <button type="submit" id="submit">Submit</button>
@@ -98,10 +99,12 @@
               commodi veniam, reiciendis debitis dignissimos enim harum rem.
               Animi pariatur dolor labore? Hic, excepturi!
             </div>
-            <div class="status"></div>
-            <div class="assignment">Benjamin</div>
-            <div class="deadline">11-.1-1997 - 05:30</div>
-            <div class="del">delete</div>
+            <div class="card-bottom">
+              <div class="status"></div>
+              <div class="assignment">Benjamin</div>
+              <div class="deadline">11-.1-1997 - 05:30</div>
+              <div class="del"><ion-icon name="trash-outline"></ion-icon></div>
+            </div>
           </div>
         </div>
       </div>
@@ -145,7 +148,13 @@
     <footer>
       <p class="textfooter">By KELLER 5</p>
     </footer>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
