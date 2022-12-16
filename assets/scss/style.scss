@@ -96,8 +96,29 @@ main {
   }
 }
 
+
 footer {
   background-color: $Outstaffing-Platform-1-hex;
   width: 100vw;
   height: 15vh;
+}
+
+.footer-top {
+  padding:50px 0;
+  background-color:#fff;
+  color:#4b4c4d;
+  h3 {
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+  }
+}
+
+.footer-about {
+
+}
+
+.footer-bottom {
+
 }
