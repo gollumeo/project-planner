@@ -15,14 +15,18 @@ body {
 }
 
 header {
-  background-color: #3350a6;
+  background: linear-gradient(270deg, rgb(255, 252, 0) 0%, rgb(255, 149, 0) 100%);
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
 }
+header .logo {
+  font-size: 300%;
+  margin-top: 10px;
+}
 header .brand {
-  font-size: 140%;
+  font-size: 300%;
 }
 
 main {
@@ -34,7 +38,7 @@ main {
 main .task {
   height: 100%;
   border-radius: 20px;
-  background-color: #0554f2;
+  background-color: #FF9800;
 }
 main .task div {
   margin-left: 5%;
@@ -50,7 +54,7 @@ main .to-do-container .to-do-title {
   width: 100%;
   border-radius: 20px;
   margin: 2% 0 2%;
-  background-color: #0554f2;
+  background-color: #FF9800;
 }
 main .doing-container {
   flex: 33%;
@@ -63,7 +67,7 @@ main .doing-container .doing-title {
   width: 100%;
   border-radius: 20px;
   margin: 2% 0 2%;
-  background-color: #1374f2;
+  background-color: #FFC900;
 }
 main .done-container {
   flex: 33%;
@@ -76,11 +80,11 @@ main .done-container .done-title {
   width: 100%;
   border-radius: 20px;
   margin: 2% 0 2%;
-  background-color: #0dd965;
+  background-color: #FEF928;
 }
 
 footer {
-  background-color: #3350a6;
+  background: linear-gradient(270deg, rgb(255, 252, 0) 0%, rgb(255, 149, 0) 100%);
   width: 100vw;
   height: 15vh;
 }/*# sourceMappingURL=style.css.map */

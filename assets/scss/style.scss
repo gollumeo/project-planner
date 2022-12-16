@@ -1,9 +1,9 @@
 /* Color Theme Swatches in Hex */
 $Outstaffing-Platform-1-hex: #3350a6;
-$Outstaffing-Platform-2-hex: #0554f2;
-$Outstaffing-Platform-3-hex: #1374f2;
+$Outstaffing-Platform-2-hex: #FF9800;
+$Outstaffing-Platform-3-hex: #FFC900;
 $Outstaffing-Platform-4-hex: #f2f2f2;
-$Outstaffing-Platform-5-hex: #0dd965;
+$Outstaffing-Platform-5-hex: #FEF928;
 
 @mixin tasks-container {
   // height: 33%;
@@ -40,14 +40,19 @@ body {
 //STRUCTURE
 
 header {
-  background-color: $Outstaffing-Platform-1-hex;
+  background: linear-gradient(270deg, rgba(255,252,0,1) 0%, rgba(255,149,0,1) 100%);
   width: 100vw;
-  height: 10vh;
+  height: 15vh;
   display: flex;
   align-items: center;
 
-  .brand {
-    font-size: 140%;
+  .logo{
+    font-size: 300%;
+    margin-top: 10px;
+  }
+  .brand{
+    font-size: 300%;
+    // color: black;
   }
 }
 
@@ -96,7 +101,7 @@ main {
 }
 
 footer {
-  background-color: $Outstaffing-Platform-1-hex;
+  background: linear-gradient(270deg, rgba(255,252,0,1) 0%, rgba(255,149,0,1) 100%);
   width: 100vw;
   height: 15vh;
 }
