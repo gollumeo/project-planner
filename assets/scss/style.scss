@@ -101,12 +101,13 @@ footer {
   background-color: $Outstaffing-Platform-1-hex;
   color:$Outstaffing-Platform-4-hex;
   width: 100vw;
-  height: 15vh;
   text-align: center;
 }
 
 .footer-top {
-  
+  .footerlogo {
+    font-size: 1%;
+  }
   h3 {
     margin-top:0;
     margin-bottom:12px;
@@ -121,8 +122,7 @@ footer {
     padding:0;
     list-style:none;
     line-height:1.6;
-    font: size .75rem
-    margin-bottom:0;
+    font-size:  .75rem;
   } }
 
 .footer-bottom {
