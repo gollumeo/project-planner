@@ -132,16 +132,6 @@ article .cards-panel div {
 article .cards-panel .submit-btn {
   margin-top: 1.5vh;
 }
-article .cards-panel .submit-btn button {
-  height: 3.5vh;
-  width: 10%;
-  background-color: rgb(143, 166, 187);
-  border-radius: 15px;
-  padding: 0.8vw;
-  line-height: 20%;
-  margin-left: 50%;
-  margin-bottom: 0.8vw;
-}
 article .cards-panel .submit-btn select {
   height: 5vh;
   font-family: "Montserrat Alternates", sans-serif;
@@ -162,4 +152,18 @@ article .cards-panel .submit-btn select option {
 article.displayed {
   opacity: 100;
   transition: opacity 0.8s ease-in-out;
+}
+
+#submit {
+  height: 2vh;
+  width: 10%;
+  background-color: rgb(143, 166, 187);
+  border-radius: 20px;
+  padding: 0.8vw;
+  line-height: 20%;
+  margin-left: 50%;
+  margin-bottom: 0.8vw;
+}
+#submit .btn-submit {
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

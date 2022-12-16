@@ -148,18 +148,6 @@ article {
     .submit-btn {
       margin-top: 1.5vh;
 
-      button {
-        // margin-left: 40%;
-        height: 3.5vh;
-        width: 10%;
-        background-color: rgb(143, 166, 187);
-        border-radius: 15px;
-        padding: 0.8vw;
-        line-height: 20%;
-        margin-left: 50%;
-        margin-bottom: 0.8vw;
-      }
-
       select {
         height: 5vh;
         font-family: "Montserrat Alternates", sans-serif;
@@ -178,10 +166,26 @@ article {
         }
       }
     }
+
   }
 }
 
 article.displayed {
   opacity: 100;
   transition: opacity 0.8s ease-in-out;
+}
+
+#submit {
+  height: 2vh;
+  width: 10%;
+  background-color: rgb(143, 166, 187);
+  border-radius: 20px;
+  padding: 0.8vw;
+  line-height: 20%;
+  margin-left: 50%;
+  margin-bottom: 0.8vw;
+
+  .btn-submit {
+    margin: 0 auto;
+  }
 }

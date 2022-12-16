@@ -36,7 +36,7 @@
     <article>
       <div class="cards-panel">
         <h1>
-          Welcome to the tasks' creation tool! Please submit every field before
+          Welcome to the tasks' creation tool! Please fill every field before
           submitting your work. 😊
         </h1>
         <form name="new-task">
@@ -79,10 +79,11 @@
           </div>
           <div class="panel-due-time">
             <span class="text">Due time:</span>
-            <input type="date" name="due-time" id="panel-due-time" required/>
+            <input type="date" name="due-date" id="panel-due-date" required/><br>
+            <input type="time" name="due-time" id="panel-due-time" required/>
           </div>
-          <div class="submit-btn">
-            <button type="submit" id="submit">Submit</button>
+          <div class="submit-btn" id="submit">
+            <span class="btn-submit">Submit</span>
           </div>
         </form>
       </div>
