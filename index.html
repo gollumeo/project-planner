@@ -20,6 +20,8 @@
     />
 
     <script src="./assets/scripts/toggle.js" defer></script>
+    <script src="./assets/scripts/panel.js" defer></script>
+
     <title>LET'S PLAN IT!</title>
   </head>
 
@@ -37,7 +39,7 @@
           Welcome to the tasks' creation tool! Please submit every field before
           submitting your work. 😊
         </h1>
-        <form>
+        <form name="new-task">
           <div class="panel-tasktitle">
             <span class="text">Task name:</span>
             <input
@@ -45,6 +47,7 @@
               name="task-title"
               id="panel-title"
               placeholder="Your task name."
+              required
             />
           </div>
           <div class="panel-description">
@@ -52,11 +55,12 @@
             <textarea
               placeholder="A brief description of your task."
               id="panel-description"
+              required
             ></textarea>
           </div>
           <div class="status">
             <span class="text">Status:</span>
-            <select name="status" id="panel-task-status">
+            <select name="status" id="panel-task-status" required>
               <option value="select">Select a status</option>
               <option value="to-do">To Do</option>
               <option value="doing">Doing</option>
@@ -70,11 +74,12 @@
               name="assignment"
               id="panel-assignment"
               placeholder="The person assigned to that task, if there is one."
+              required
             />
           </div>
           <div class="panel-due-time">
             <span class="text">Due time:</span>
-            <input type="date" name="due-time" id="panel-due-time" />
+            <input type="date" name="due-time" id="panel-due-time" required/>
           </div>
           <div class="submit-btn">
             <button type="submit" id="submit">Submit</button>
