@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
-  <script src="./assets/scripts/init.js" defer></script>
+  <script src="./assets/scripts/toggle.js" defer></script>
   <title>LET'S PLAN IT!</title>
 </head>
 
@@ -38,7 +38,12 @@
           <span class="text">Description:</span> <textarea placeholder="A brief description of your task." id="panel-description"></textarea>
         </div>
         <div class="status">
-          <span class="text">Status:</span> <input type="radio" name="status" id="panel-task-status">
+          <span class="text">Status:</span> <select name="status" id="panel-task-status" size="3">
+            <option value="to-do">To Do</option>
+            <option value="doing">Doing</option>
+            <option value="done">Done</option>
+            </select>
+
         </div>
         <div class="panel-assignment">
           <span class="text">Assigned person:</span> <input type="text" name="assignment" id="panel-assignment"
@@ -48,7 +53,7 @@
           <span class="text">Due time:</span> <input type="date" name="due-time" id="panel-due-time">
         </div>
         <div class="submit-btn">
-          <button type="submit">Submit</button>
+          <button type="submit" id="submit">Submit</button>
         </div>
       </form>
     </div>

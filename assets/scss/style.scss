@@ -90,7 +90,8 @@ article {
   margin: auto;
   box-shadow: 0px 0px 5px;
   border-radius: 5px;
-  // display: none;
+  opacity: 0;
+  transition: opacity ease-in .5s;
 
   .cards-panel {
     display: flex;
@@ -102,8 +103,8 @@ article {
     background-color: rgba(255, 255, 255, 0.466);
     box-shadow: 0px 0px 5px;
     margin-top: 5vh;
-    padding-right: .5vw;
-    padding-left: .5vw;
+    padding-right: 0.5vw;
+    padding-left: 0.5vw;
 
     h1 {
       text-align: center;
@@ -126,7 +127,6 @@ article {
       text-align: center;
       border-radius: 25px;
       margin: 0.5vh 0;
-
     }
 
     textarea {
@@ -136,7 +136,6 @@ article {
       text-align: center;
       border-radius: 25px;
       margin: 0.5vh 0;
-
     }
 
     div {
@@ -155,11 +154,16 @@ article {
         width: 10%;
         background-color: rgb(143, 166, 187);
         border-radius: 15px;
-        padding: .8vw;
+        padding: 0.8vw;
         line-height: 20%;
         margin-left: 50%;
-        margin-bottom: .8vw;
+        margin-bottom: 0.8vw;
       }
     }
   }
+}
+
+article.displayed {
+  opacity: 100;
+  transition: opacity .8s ease-in-out;
 }
