@@ -123,9 +123,12 @@ article .cards-panel h1 {
   text-align: center;
   margin-top: 5%;
   padding-bottom: 3vh;
+  color: #ff7b00;
 }
 article .cards-panel .text {
   display: inline-block;
+  color: #ff7b00;
+  font-weight: bold;
   width: 20%;
   height: auto;
   margin: 0.5vh 0;
