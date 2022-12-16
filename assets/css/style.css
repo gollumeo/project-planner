@@ -22,7 +22,6 @@ header {
   align-items: center;
   margin-bottom: 5%;
 }
-
 header .brand {
   font-size: 140%;
 }
@@ -33,23 +32,19 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 main .task {
   height: 100%;
   border-radius: 20px;
   background-color: #0554f2;
 }
-
 main .task div {
   margin-left: 5%;
 }
-
 main .to-do-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .to-do-container .to-do-title {
   text-align: center;
   font-size: 200%;
@@ -58,13 +53,11 @@ main .to-do-container .to-do-title {
   margin: 2% 0 2%;
   background-color: #0554f2;
 }
-
 main .doing-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .doing-container .doing-title {
   text-align: center;
   font-size: 200%;
@@ -73,13 +66,11 @@ main .doing-container .doing-title {
   margin: 2% 0 2%;
   background-color: #1374f2;
 }
-
 main .done-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .done-container .done-title {
   text-align: center;
   font-size: 200%;
@@ -91,7 +82,32 @@ main .done-container .done-title {
 
 footer {
   background-color: #3350a6;
+  color: #f2f2f2;
   width: 100vw;
   height: 15vh;
+  text-align: center;
 }
-/*# sourceMappingURL=style.css.map */
+
+.footer-top h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+.footer-about {
+  font-size: 0.875rem;
+}
+.footer-about ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.6;
+  font: size 0.75rem marg;
+}
+
+.footer-bottom {
+  margin-top: 14px;
+  margin-bottom: 0;
+  font-size: 0.6875rem;
+  opacity: 0.6;
+}/*# sourceMappingURL=style.css.map */
