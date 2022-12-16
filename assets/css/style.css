@@ -20,9 +20,7 @@ header {
   height: 10vh;
   display: flex;
   align-items: center;
-  margin-bottom: 5%;
 }
-
 header .brand {
   font-size: 140%;
 }
@@ -33,23 +31,19 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
 main .task {
   height: 100%;
   border-radius: 20px;
   background-color: #0554f2;
 }
-
 main .task div {
   margin-left: 5%;
 }
-
 main .to-do-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .to-do-container .to-do-title {
   text-align: center;
   font-size: 200%;
@@ -58,13 +52,11 @@ main .to-do-container .to-do-title {
   margin: 2% 0 2%;
   background-color: #0554f2;
 }
-
 main .doing-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .doing-container .doing-title {
   text-align: center;
   font-size: 200%;
@@ -73,13 +65,11 @@ main .doing-container .doing-title {
   margin: 2% 0 2%;
   background-color: #1374f2;
 }
-
 main .done-container {
   flex: 33%;
   width: 80vw;
   margin: 2% 0;
 }
-
 main .done-container .done-title {
   text-align: center;
   font-size: 200%;
@@ -93,5 +83,4 @@ footer {
   background-color: #3350a6;
   width: 100vw;
   height: 15vh;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
